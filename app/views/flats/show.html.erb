@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card my-2" style="width: 18rem;">
+    <%= image_tag @flat["imageUrl"], alt: "alttext", class: "card-img-top" %>
+    <div class="card-body">
+      <h1 class="card-title"><%= @flat["name"] %></h1>
+      <p class="card-text"><%= @flat['priceCurrency'] %> <%= @flat['price'] %></p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+  <%= link_to '↪️', root_path  %>
+</div>
